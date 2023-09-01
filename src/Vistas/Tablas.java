@@ -26,74 +26,84 @@ public class Tablas extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabel1.setBackground(new java.awt.Color(0, 0, 0));
         jLabel1.setFont(new java.awt.Font("Copperplate Gothic Bold", 0, 36)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(240, 240, 240));
         jLabel1.setText("Bienvenido");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 10, -1, 40));
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(240, 240, 240));
+        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         jLabel2.setText("Seleccione la Tabla en la que desea Ingresar Datos");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 80, 360, 30));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, 430, 30));
 
         salir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/cerrar.png"))); // NOI18N
         salir.setText("SALIR");
+        salir.setContentAreaFilled(false);
         salir.setFocusPainted(false);
         salir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 salirActionPerformed(evt);
             }
         });
-        getContentPane().add(salir, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 330, -1, -1));
+        getContentPane().add(salir, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 260, 140, 50));
 
+        tProducto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/productos.png"))); // NOI18N
         tProducto.setText(" Tabla Producto");
+        tProducto.setContentAreaFilled(false);
         tProducto.setFocusPainted(false);
         tProducto.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 tProductoActionPerformed(evt);
             }
         });
-        getContentPane().add(tProducto, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 140, 140, -1));
+        getContentPane().add(tProducto, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 140, 140, 40));
 
+        tFactura.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/factura.png"))); // NOI18N
         tFactura.setText(" Tabla Factura");
+        tFactura.setContentAreaFilled(false);
         tFactura.setFocusPainted(false);
         tFactura.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 tFacturaActionPerformed(evt);
             }
         });
-        getContentPane().add(tFactura, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 250, 140, -1));
+        getContentPane().add(tFactura, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 200, 140, 40));
 
+        tPagos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/pagos_icono.png"))); // NOI18N
         tPagos.setText(" Tabla Pagos");
+        tPagos.setContentAreaFilled(false);
         tPagos.setFocusPainted(false);
         tPagos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 tPagosActionPerformed(evt);
             }
         });
-        getContentPane().add(tPagos, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 260, 140, -1));
+        getContentPane().add(tPagos, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 260, 140, 40));
 
+        tCompra.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/carros (1).png"))); // NOI18N
         tCompra.setText(" Tabla Compra");
+        tCompra.setContentAreaFilled(false);
         tCompra.setFocusPainted(false);
         tCompra.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 tCompraActionPerformed(evt);
             }
         });
-        getContentPane().add(tCompra, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 200, 140, -1));
+        getContentPane().add(tCompra, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 200, 140, 40));
 
+        tCliente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/agregar-usuario.png"))); // NOI18N
         tCliente.setText(" Tabla Cliente");
+        tCliente.setContentAreaFilled(false);
         tCliente.setFocusPainted(false);
         tCliente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 tClienteActionPerformed(evt);
             }
         });
-        getContentPane().add(tCliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, 140, -1));
+        getContentPane().add(tCliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, 140, 40));
 
-        jLabel3.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel3.setBackground(new java.awt.Color(255, 255, 142));
         jLabel3.setOpaque(true);
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 450, 380));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 450, 330));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -105,7 +115,7 @@ public class Tablas extends javax.swing.JFrame {
 
     private void tProductoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tProductoActionPerformed
 
-        dispose();
+       // dispose();
     }//GEN-LAST:event_tProductoActionPerformed
 
     private void tFacturaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tFacturaActionPerformed
@@ -122,6 +132,10 @@ public class Tablas extends javax.swing.JFrame {
 
     private void tClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tClienteActionPerformed
         // TODO add your handling code here:
+        Cliente cli = new Cliente();
+        cli.setVisible(true);
+        dispose();
+
     }//GEN-LAST:event_tClienteActionPerformed
 
 

@@ -27,18 +27,18 @@ public class Formulario extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabel1.setBackground(new java.awt.Color(0, 0, 0));
         jLabel1.setFont(new java.awt.Font("Copperplate Gothic Bold", 0, 36)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(240, 240, 240));
         jLabel1.setText("Bienvenido");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 10, -1, 40));
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(240, 240, 240));
         jLabel2.setText("Por favor conectese a la Base de Datos");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 70, -1, -1));
 
         conexion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/relacional.png"))); // NOI18N
         conexion.setText("  Conectar");
+        conexion.setContentAreaFilled(false);
         conexion.setFocusPainted(false);
         conexion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -49,6 +49,7 @@ public class Formulario extends javax.swing.JFrame {
 
         salir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/cerrar.png"))); // NOI18N
         salir.setText("  Salir");
+        salir.setContentAreaFilled(false);
         salir.setFocusPainted(false);
         salir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -57,7 +58,7 @@ public class Formulario extends javax.swing.JFrame {
         });
         getContentPane().add(salir, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 190, 120, 30));
 
-        fondo.setBackground(new java.awt.Color(0, 0, 0));
+        fondo.setBackground(new java.awt.Color(255, 255, 142));
         fondo.setOpaque(true);
         getContentPane().add(fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 500, 260));
 
