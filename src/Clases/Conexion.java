@@ -20,7 +20,7 @@ public class Conexion {
     public void conectaBD() throws Exception {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            cn = DriverManager.getConnection("jdbc:mysql://localhost:3306/practicas", "root", "1916");
+            cn = DriverManager.getConnection("jdbc:mysql://localhost:3306/practicas", "root", "Gusano1234");
         } catch (SQLException e) {
             System.out.println("Error: " + e);
         }
@@ -33,7 +33,7 @@ public class Conexion {
     public Connection getConnection() {
         return cn;
     }
-    /*
+    
     public void box(String tabla, String valor, String valor2, JComboBox c) throws Exception {
         String sql = "Select * from " + tabla;
 
@@ -55,6 +55,6 @@ public class Conexion {
             System.out.println("Error " + e);
         }
     }
-     */
+     
 
 }

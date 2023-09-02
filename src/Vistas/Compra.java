@@ -17,13 +17,13 @@ public class Compra extends javax.swing.JFrame {
     ResultSet rs;
     DefaultTableModel modelo;
     int id;
-    
+
     public Compra() throws Exception {
         initComponents();
         setLocationRelativeTo(null);
         listar();
-        //con.box("cliente", "nombre", "id_cliente", comboCliente);
-        //con.box("producto", "nombre", "id_producto", comboProducto);
+        con.box("cliente", "nombre", "id_cliente", comboCliente);
+        con.box("producto", "nombre", "id_producto", comboProducto);
     }
 
     @SuppressWarnings("unchecked")
@@ -79,7 +79,7 @@ public class Compra extends javax.swing.JFrame {
         });
         jPanel1.add(txtId, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 30, 139, -1));
 
-        txtfecha.setText("yyyy/mm/dd");
+        txtfecha.setText("yyyy-mm-dd");
         txtfecha.setToolTipText("");
         txtfecha.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

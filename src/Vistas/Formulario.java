@@ -47,7 +47,7 @@ public class Formulario extends javax.swing.JFrame {
         });
         getContentPane().add(conexion, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 120, 120, 30));
 
-        salir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/cerrar.png"))); // NOI18N
+        salir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/puerta-de-salida.png"))); // NOI18N
         salir.setText("  Salir");
         salir.setContentAreaFilled(false);
         salir.setFocusPainted(false);
@@ -98,5 +98,8 @@ public class Formulario extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JButton salir;
+    private javax.swing.JButton salir1;
+    private javax.swing.JButton salir2;
+    private javax.swing.JButton salir3;
     // End of variables declaration//GEN-END:variables
 }

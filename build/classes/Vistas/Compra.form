@@ -101,7 +101,7 @@
         </Component>
         <Component class="javax.swing.JTextField" name="txtfecha">
           <Properties>
-            <Property name="text" type="java.lang.String" value="yyyy/mm/dd"/>
+            <Property name="text" type="java.lang.String" value="yyyy-mm-dd"/>
             <Property name="toolTipText" type="java.lang.String" value=""/>
           </Properties>
           <Events>
