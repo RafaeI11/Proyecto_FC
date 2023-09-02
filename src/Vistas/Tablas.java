@@ -1,5 +1,7 @@
 package Vistas;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 
 public class Tablas extends javax.swing.JFrame {
@@ -114,8 +116,13 @@ public class Tablas extends javax.swing.JFrame {
     }//GEN-LAST:event_salirActionPerformed
 
     private void tProductoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tProductoActionPerformed
-
-       // dispose();
+        try {
+            Producto pr = new Producto();
+            pr.setVisible(true);
+        } catch (Exception ex) {
+            Logger.getLogger(Tablas.class.getName()).log(Level.SEVERE, null, ex);
+        }
+       dispose();
     }//GEN-LAST:event_tProductoActionPerformed
 
     private void tFacturaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tFacturaActionPerformed
@@ -127,7 +134,13 @@ public class Tablas extends javax.swing.JFrame {
     }//GEN-LAST:event_tPagosActionPerformed
 
     private void tCompraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tCompraActionPerformed
-        // TODO add your handling code here:
+        try {
+            Compra cpr = new Compra();
+            cpr.setVisible(true);
+        } catch (Exception ex) {
+            Logger.getLogger(Tablas.class.getName()).log(Level.SEVERE, null, ex);
+        }
+       dispose();
     }//GEN-LAST:event_tCompraActionPerformed
 
     private void tClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tClienteActionPerformed
