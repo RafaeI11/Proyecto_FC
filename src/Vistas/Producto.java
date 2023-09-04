@@ -48,7 +48,7 @@ public class Producto extends javax.swing.JFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 204));
-        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("Datos de Cliente"));
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("Datos del Producto"));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel2.setText("ID:");
